@@ -1,0 +1,16 @@
+[package]
+name = "httpstream2tcp"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1.0.98"
+clap = {version = "4.5.38", features = ["derive"]}
+hyper = { version = "1", features = ["full"] }
+tokio = { version = "1", features = ["full"] }
+http-body-util = "0.1"
+hyper-util = { version = "0.1", features = ["full"] }
+futures-util = "0.3.31"
+tokio-util = "0.7.15"
+tokio-stream = "0.1.17"
+futures = "0.3.31"
