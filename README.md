@@ -1,4 +1,4 @@
-# HTTPSteam2TCP - An HTTP to TCP streaming utility
+# HTTPStream2TCP - An HTTP to TCP streaming utility
 
 HTTPStream2TCP is a server that allows using HTTP chunked transfer encoding to stream data to a TCP socket. This effectively allows utilities that support asynchronous HTTP transfers, such as `curl`, to read and write data to any network port. This is proof-of-concept code at this time and is not recommended for production usage. No transport layer encryption is offered.
 
