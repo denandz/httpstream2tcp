@@ -20,7 +20,7 @@ By default, HTTPStream2TCP will listen on port 3000 on any address for incoming 
 ssh -v -o ProxyCommand="curl -s -N 127.0.0.1:3000/stream -T . --no-progress-meter --expect100-timeout 0.01" 127.0.0.1
 ```
 
-![example usage](./gif/example-ssh.gif)
+![example usage](./gif/example-ssh.webp)
 
 The Hyper library does not respond with a `100 Continue`, so the `--expect100-timeout` flag speeds things up a bit. Note, running HTTPStream2TCP with `-v` will impact performance as all packets end up getting logged to `stdout` server side. 
 
