@@ -2,7 +2,7 @@
 
 HTTPStream2TCP is a server that allows using HTTP chunked transfer encoding to stream data to a TCP socket. This effectively allows utilities that support asynchronous HTTP transfers, such as `curl`, to read and write data to any network port. This is proof-of-concept code at this time and is not recommended for production usage. No transport layer encryption is offered.
 
-By default, this utility will forward any data sent to `<server>:3000/stream` via PUT to `127.0.0.1:22`. A simple way to write to this service is via `curl -T . -N http://127.0.0.1:3000/stream'.
+By default, this utility will forward any data sent to `<server>:3000/stream` via PUT to `127.0.0.1:22`. A simple way to write to this service is via `curl -T . -N http://127.0.0.1:3000/stream`.
 
 This utility is built using the Rust Hyper HTTP library, and currently supports HTTP/1.1. 
 
